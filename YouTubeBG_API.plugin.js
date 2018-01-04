@@ -14,7 +14,7 @@ class YouTubeBG_API {
  injectVBG() {
 
    //=============================================================================================================================//
-   // Below is four variable to control some aspects of the plugin (settings inside discord might be added at some point),        //
+   // Below is five settings to control some aspects of the plugin (settings inside discord might be added at some point),        //
    // fill them accordingly.                                                                                                      //
    //=============================================================================================================================//
 
@@ -120,10 +120,11 @@ class YouTubeBG_API {
          });
        });
      }
+
      document.getElementById("app-mount").appendChild(div);
      document.getElementById("app-mount").style.zIndex = "-2";
      console.log("Video Background injected");
-   }
+  }
   
  unload () {
     $("#videoframe").remove();
