@@ -34,7 +34,6 @@ class YouTubeBG {
   }
   
   load () {
-    this.injectVBG();
   }
   
   start () {
