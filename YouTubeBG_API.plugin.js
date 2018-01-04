@@ -6,7 +6,7 @@ class YouTubeBG_API {
    /** BD FUNCTIONS **/
   
    getName         () { return "YouTubeBG with API"; }
-   getDescription  () { return "Proof of concept for YouTube and Twitch based backgrounds"; }
+   getDescription  () { return "Proof of concept for YouTube and Twitch based backgrounds. Requires theme that has custom background implemented into \"app-mount\"-element with layers on top transparent."; }
    getVersion      () { return "0.4.0"; }
    getAuthor       () { return "Kakkela"; }
    
