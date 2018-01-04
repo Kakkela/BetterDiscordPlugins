@@ -59,7 +59,7 @@ class YouTubeBG_API {
      // YouTube vidoe loading with API  //
      //=================================//
 
-     div.innerHTML = "<div id=\"videoframe\" style=\"box-sizing: border-box;height: 56.25vw;left: 50%;min-height: 100%;min-width: 100%;transform: translate(-50%, -50%);position: absolute;top: 50%;width: 177.77777778vh;\"></div>";
+     /*div.innerHTML = "<div id=\"videoframe\" style=\"box-sizing: border-box;height: 56.25vw;left: 50%;min-height: 100%;min-width: 100%;transform: translate(-50%, -50%);position: absolute;top: 50%;width: 177.77777778vh;\"></div>";
  
      $.getScript("https://www.youtube.com/player_api", function() {});
      var player
@@ -82,7 +82,7 @@ class YouTubeBG_API {
      }
      function onPlayerReady(event) {
        event.target.playVideo()
-     }
+     }*/
 
      //===================================//
      // YouTube playlist loading with API //
