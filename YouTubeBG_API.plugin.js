@@ -23,7 +23,7 @@ class YouTubeBG_API {
     var soundoff = "1";
     var TwitchID = "monstercat";
 
-    const playbackChoice = 0; // 0 = Video, 1 = Playlist
+    const playbackChoice = 1; // 0 = Video, 1 = Playlist
     const serviceChoice = 0; // 0 = YouTube, 1 = Twitch
     
     var div = document.createElement("div");
@@ -84,13 +84,11 @@ class YouTubeBG_API {
   }
   
   unload () {
-    player.destroy();
     $("#videoframe").remove();
     $(".video-background").remove();  
   }
   
   stop () {
-    player.destroy();
     $("#videoframe").remove();
     $(".video-background").remove(); 
   }
