@@ -23,7 +23,7 @@ class YouTubeBG_API {
     var soundoff = "1";
     var TwitchID = "monstercat";
 
-    const playbackChoice = 1; // 0 = Video, 1 = Playlist
+    const playbackChoice = 0; // 0 = Video, 1 = Playlist
     const serviceChoice = 0; // 0 = YouTube, 1 = Twitch
     
     var div = document.createElement("div");
@@ -61,7 +61,6 @@ class YouTubeBG_API {
   }
 
   enablePlayer() {
-
     if (typeof window.YT !== 'undefined') {
       player = new YT.Player('videoframe', {
         events: {
@@ -79,21 +78,18 @@ class YouTubeBG_API {
     }
 
     function onPlayerReady(event) {
-      event.target.playVideo()
       event.target.setShuffle({shufflePlaylist:"true"})
       event.target.nextVideo()
     }
   }
   
   unload () {
-    player.stopVideo();
     player.destroy();
     $("#videoframe").remove();
     $(".video-background").remove();  
   }
   
   stop () {
-    player.stopVideo();
     player.destroy();
     $("#videoframe").remove();
     $(".video-background").remove(); 
